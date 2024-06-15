@@ -1,0 +1,55 @@
+body {
+            font-family: Arial, sans-serif;
+            background-color: #3498db; /* Blue background color */
+            margin: 0;
+            overflow: hidden; /* Hide overflow to prevent scrollbars */
+            position: relative; /* Required for absolute positioning */
+            min-height: 100vh; /* Ensure body covers the viewport height */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* Space between header and table */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(242, 242, 242, 0.8); /* Less transparent background color */
+        }
+        /* Animation for bubbles */
+        @keyframes float {
+            0% { bottom: -5px; }
+            50% { transform: translateY(-5px); }
+            100% { bottom: 100%; }
+        }
+        .bubbles-container {
+            position: absolute;
+            bottom: 0; /* Start at the bottom of the page */
+            width: 100%;
+            height: 100%; /* Adjust height as needed */
+            overflow: hidden; /* Hide overflow to prevent scrollbars */
+        }
+        .bubble {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+            border-radius: 50%;
+            animation: float 5s ease-in-out infinite; /* Adjust timing and animation */
+        }
+        /* Additional styling for the page */
+        h1 {
+            color: #fff; /* White text color for headings */
+            text-align: center;
+            margin-top: 40px; /* Space between top and heading */
+        }
+        .container {
+            position: relative;
+
+        }
